@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunidhi Sharma | Portfolio</title>
+    <meta name="description"
+        content="Sunidhi Sharma – B.Tech CSE student at LPU, skilled in Java, Python, C++, Docker, AWS and DevOps." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <nav id="navbar">
+        <div class="nav-logo">SS<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#certifications">Certs</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+    </nav>
+    <section id="home" class="section hero-section">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello World, I am</p>
+            <h1 class="hero-name">SUNIDHI<span class="accent"> SHARMA</span></h1>
+            <div class="hero-role">
+                <span class="role-prefix">&gt;&gt; </span>
+                <span id="typewriter"></span><span class="cursor">|</span>
+            </div>
+            <p class="hero-subtext">B.Tech CSE Student &nbsp;|&nbsp; DevOps Enthusiast &nbsp;|&nbsp; AI Builder</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+            <div class="hero-socials">
+                <a href="mailto:sunidhis093@gmail.com" id="social-email" aria-label="Email">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/sunidhi-sharma17/" target="_blank" id="social-linkedin"
+                    aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a href="https://github.com/sunidhi-17" target="_blank" id="social-github" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// 01</span>
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-avatar reveal">
+                    <div class="avatar-frame">
+                        <div class="avatar-inner">
+                            <svg viewBox="0 0 200 200" class="avatar-svg">
+                                <defs>
+                                    <radialGradient id="avatarGrad" cx="50%" cy="40%" r="60%">
+                                        <stop offset="0%" stop-color="#00ffe7" stop-opacity="0.3" />
+                                        <stop offset="100%" stop-color="#7b2ff7" stop-opacity="0.1" />
+                                    </radialGradient>
+                                </defs>
+                                <circle cx="100" cy="100" r="98" fill="url(#avatarGrad)" stroke="#00ffe7"
+                                    stroke-width="1.5" stroke-dasharray="8 4" />
+                                <circle cx="100" cy="80" r="35" fill="#00ffe720" stroke="#00ffe7" stroke-width="1.5" />
+                                <ellipse cx="100" cy="155" rx="55" ry="35" fill="#7b2ff720" stroke="#7b2ff7"
+                                    stroke-width="1.5" />
+                                <text x="100" y="90" text-anchor="middle" fill="#00ffe7" font-size="28"
+                                    font-family="Orbitron">SS</text>
+                            </svg>
+                        </div>
+                        <div class="avatar-ring ring-1"></div>
+                        <div class="avatar-ring ring-2"></div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card"><span class="stat-num">2+</span><span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-card"><span class="stat-num">3</span><span
+                                class="stat-label">Certifications</span></div>
+                        <div class="stat-card"><span class="stat-num">7.39</span><span class="stat-label">CGPA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <p class="about-bio">Hi! I am <strong class="accent">Sunidhi Sharma</strong>, a passionate B.Tech
+                        Computer Science &amp; Engineering student at <strong>Lovely Professional University</strong>,
+                        Phagwara. I build end-to-end solutions from AI-powered web apps to fully automated DevOps
+                        pipelines.</p>
+                    <p class="about-bio">My journey spans <strong class="accent">DevOps engineering</strong>, <strong
+                            class="accent">AI/ML applications</strong>, and <strong class="accent">full-stack
+                            development</strong>. I love transforming ideas into scalable, production-ready software.
+                    </p>
+                    <p class="about-bio">Beyond code, I actively participate in hackathons (including IIT Ropar Advitiya
+                        25) and continuously sharpen my skills through hands-on training and certifications from Oracle,
+                        Google, and Coursera.</p>
+                    <div class="about-info-grid">
+                        <div class="info-item"><span class="info-label">Email</span><span
+                                class="info-val">sunidhis093@gmail.com</span></div>
+                        <div class="info-item"><span class="info-label">Phone</span><span class="info-val">+91
+                                7766946057</span></div>
+                        <div class="info-item"><span class="info-label">Location</span><span class="info-val">Phagwara,
+                                Punjab</span></div>
+                        <div class="info-item"><span class="info-label">Degree</span><span class="info-val">B.Tech CSE
+                                (2023–Present)</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// 02</span>
+                <h2 class="section-title">My <span class="accent">Skills</span></h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-cat-icon">&#x1F4BB;</div>
+                    <h3 class="skill-cat-title">Languages</h3>
+                    <div class="skill-tags"><span class="skill-tag">C++</span><span class="skill-tag">Python</span><span
+                            class="skill-tag">Java</span></div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-cat-icon">&#x1F527;</div>
+                    <h3 class="skill-cat-title">Tools &amp; DevOps</h3>
+                    <div class="skill-tags"><span class="skill-tag">Docker</span><span class="skill-tag">AWS</span><span
+                            class="skill-tag">Jenkins</span><span class="skill-tag">Maven</span><span
+                            class="skill-tag">GitHub Actions</span></div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-cat-icon">&#x1F30D;</div>
+                    <h3 class="skill-cat-title">Platforms</h3>
+                    <div class="skill-tags"><span class="skill-tag">VS Code</span><span
+                            class="skill-tag">GitHub</span><span class="skill-tag">AWS CLI</span><span
+                            class="skill-tag">Apache CloudStack</span></div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-cat-icon">&#x1F91D;</div>
+                    <h3 class="skill-cat-title">Soft Skills</h3>
+                    <div class="skill-tags"><span class="skill-tag">Communication</span><span
+                            class="skill-tag">Adaptability</span><span class="skill-tag">Time Management</span><span
+                            class="skill-tag">Team Collaboration</span></div>
+                </div>
+            </div>
+            <div class="skill-bars reveal">
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header"><span>Java</span><span class="skill-pct">80%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header"><span>Python</span><span class="skill-pct">75%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header"><span>Docker</span><span class="skill-pct">70%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="70"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header"><span>C++</span><span class="skill-pct">65%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="65"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header"><span>AWS</span><span class="skill-pct">60%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="60"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// 03</span>
+                <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon">&#x1F4C5;</div>
+                        <div class="project-links">
+                            <a href="https://github.com/sunidhi-17" target="_blank" class="project-link"
+                                aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-date">Nov 25 - Dec 25</div>
+                    <h3 class="project-title">Event Flow</h3>
+                    <p class="project-subtitle">Java Event Reminder System</p>
+                    <p class="project-desc">Built an end-to-end DevOps pipeline for a Java-based Event Reminder system.
+                        Implemented CI with GitHub Actions validating 100% of code pushes. Containerized with Docker,
+                        reducing setup time by <strong class="accent">60%</strong>.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span><span class="tech-tag">Docker</span><span
+                            class="tech-tag">GitHub Actions</span><span class="tech-tag">CI/CD</span><span
+                            class="tech-tag">Linux</span>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon">&#x1F3A4;</div>
+                        <div class="project-links">
+                            <a href="https://github.com/sunidhi-17" target="_blank" class="project-link"
+                                aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-date">Mar 25 - Apr 25</div>
+                    <h3 class="project-title">SpeakPerfect</h3>
+                    <p class="project-subtitle">AI Language Pronunciation Trainer</p>
+                    <p class="project-desc">AI-powered web app using Python and Flask for real-time pronunciation
+                        feedback. Integrated Speech-to-Text, Dictionary and Translation APIs across <strong
+                            class="accent">10+ languages</strong> with accuracy scoring.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span><span class="tech-tag">Flask</span><span
+                            class="tech-tag">Speech Recognition</span><span class="tech-tag">REST APIs</span><span
+                            class="tech-tag">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="training" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// 04</span>
+                <h2 class="section-title">Training &amp; <span class="accent">Experience</span></h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun 25 - Jul 25</div>
+                        <h3 class="timeline-title">Data Structures &amp; Algorithms using Java</h3>
+                        <p class="timeline-org">Industry-Focused Training</p>
+                        <ul class="timeline-points">
+                            <li>Trained on core DSA: stacks, queues, trees, graphs, algorithmic problem-solving in Java.
+                            </li>
+                            <li>Implemented optimized solutions improving time-space complexity analysis and
+                                problem-solving efficiency.</li>
+                            <li>Solved diverse coding challenges following clean, scalable, performance-oriented
+                                practices.</li>
+                        </ul>
+                        <div class="project-tech" style="margin-top:0.8rem;">
+                            <span class="tech-tag">Java</span><span class="tech-tag">Data Structures</span><span
+                                class="tech-tag">Algorithms</span><span class="tech-tag">Complexity Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Feb 25</div>
+                        <h3 class="timeline-title">Hackathon - Advitiya 25</h3>
+                        <p class="timeline-org">IIT Ropar | AI Technologies</p>
+                        <ul class="timeline-points">
+                            <li>Participated in the Hackathon on AI technologies organized by IIT Ropar.</li>
+                            <li>Collaborated in a team to build innovative AI-driven solutions under tight time
+                                constraints.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// 05</span>
+                <h2 class="section-title">My <span class="accent">Certifications</span></h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card reveal">
+                    <div class="cert-badge">
+                        <svg viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="28" stroke="#00ffe7" stroke-width="2" stroke-dasharray="6 3" />
+                            <text x="30" y="35" text-anchor="middle" fill="#00ffe7" font-size="10"
+                                font-family="Orbitron" font-weight="700">OCI</text>
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Oracle Certified Foundations Associate</h3>
+                        <p class="cert-issuer">Oracle</p>
+                        <p class="cert-date">Sept 2025</p>
+                    </div>
+                    <div class="cert-glow"></div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-badge">
+                        <svg viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="28" stroke="#7b2ff7" stroke-width="2" stroke-dasharray="6 3" />
+                            <text x="30" y="35" text-anchor="middle" fill="#7b2ff7" font-size="10"
+                                font-family="Orbitron" font-weight="700">CC</text>
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Computer Communications</h3>
+                        <p class="cert-issuer">Coursera</p>
+                        <p class="cert-date">Nov 2024</p>
+                    </div>
+                    <div class="cert-glow"></div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-badge">
+                        <svg viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="28" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="6 3" />
+                            <text x="30" y="35" text-anchor="middle" fill="#ff6b6b" font-size="10"
+                                font-family="Orbitron" font-weight="700">GGL</text>
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Bits &amp; Bytes of Computer Networking</h3>
+                        <p class="cert-issuer">Google</p>
+                        <p class="cert-date">Sept 2024</p>
+                    </div>
+                    <div class="cert-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// 06</span>
+                <h2 class="section-title">My <span class="accent">Education</span></h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card reveal">
+                    <div class="edu-year-badge">2023 - Present</div>
+                    <div class="edu-degree">B.Tech - Computer Science &amp; Engineering</div>
+                    <div class="edu-institution">Lovely Professional University</div>
+                    <div class="edu-location">Phagwara, Punjab</div>
+                    <div class="edu-score"><span class="accent">CGPA: 7.39</span></div>
+                </div>
+                <div class="edu-card reveal">
+                    <div class="edu-year-badge">2022 - 2023</div>
+                    <div class="edu-degree">Intermediate - PCM</div>
+                    <div class="edu-institution">Jawahar Navodaya Vidyalaya, Dumka</div>
+                    <div class="edu-location">Dumka, Jharkhand</div>
+                    <div class="edu-score"><span class="accent">76%</span></div>
+                </div>
+                <div class="edu-card reveal">
+                    <div class="edu-year-badge">2020 - 2021</div>
+                    <div class="edu-degree">Matriculation</div>
+                    <div class="edu-institution">Jawahar Navodaya Vidyalaya, Dumka</div>
+                    <div class="edu-location">Dumka, Jharkhand</div>
+                    <div class="edu-score"><span class="accent">90.8%</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// 07</span>
+                <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <p class="contact-intro">I am always open to new opportunities, collaborations, or just a friendly
+                        chat. Drop me a message!</p>
+                    <div class="contact-links">
+                        <a href="mailto:sunidhis093@gmail.com" class="contact-link" id="contact-email-link">
+                            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" width="22" height="22">
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                </svg></div>
+                            <div>
+                                <p class="contact-link-label">Email</p>
+                                <p class="contact-link-val">sunidhis093@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/sunidhi-sharma17/" target="_blank" class="contact-link"
+                            id="contact-linkedin-link">
+                            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="22"
+                                    height="22">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg></div>
+                            <div>
+                                <p class="contact-link-label">LinkedIn</p>
+                                <p class="contact-link-val">linkedin.com/in/sunidhi-sharma17</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/sunidhi-17" target="_blank" class="contact-link"
+                            id="contact-github-link">
+                            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="22"
+                                    height="22">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg></div>
+                            <div>
+                                <p class="contact-link-label">GitHub</p>
+                                <p class="contact-link-val">github.com/sunidhi-17</p>
+                            </div>
+                        </a>
+                        <div class="contact-link non-link">
+                            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" width="22" height="22">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5 2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 5 5l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 16.92z" />
+                                </svg></div>
+                            <div>
+                                <p class="contact-link-label">Phone</p>
+                                <p class="contact-link-val">+91 7766946057</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contact-form">
+                    <div class="form-group"><label for="f-name">Your Name</label><input type="text" id="f-name"
+                            name="name" placeholder="John Doe" required /></div>
+                    <div class="form-group"><label for="f-email">Your Email</label><input type="email" id="f-email"
+                            name="email" placeholder="john@example.com" required /></div>
+                    <div class="form-group"><label for="f-message">Message</label><textarea id="f-message"
+                            name="message" rows="5" placeholder="Hello Sunidhi..." required></textarea></div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Send Message &#x27A4;</button>
+                    <p class="form-success" id="form-success">Message sent! I will get back to you soon.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Designed &amp; Built by <span class="accent">Sunidhi Sharma</span></p>
+        <p class="footer-sub">2025 All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
