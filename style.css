@@ -416,12 +416,16 @@ body {
     align-items: center;
 }
 
-.avatar-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
+.about-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-frame {
+  width: 220px;   /* adjust here */
+  height: 220px;
+  position: relative;
 }
 
 .avatar-inner {
@@ -429,14 +433,13 @@ body {
   height: 100%;
   border-radius: 50%;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.avatar-svg {
-    width: 100%;
-    height: 100%;
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .avatar-ring {
